@@ -185,7 +185,8 @@ color: var(--main-text-color);
   margin-left: 50px;
 }
 
- .contact.link:hover {
+ .contact.link:hover,
+ .contact.link:focus {
 color: var(--accent-color);
  }
 
@@ -265,10 +266,18 @@ color: var(--accent-color);
     margin-left: 30px;
   }
 
-  .advantage-icon {
-    width: 270px;
-
+  .container-icon-advantage {
+  display: flex;
+  justify-content: center;
+  padding: 25px 100px;
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+  margin-bottom: 30px;
   }
+
+  .advantage-icon {
+background-position: center;
+}
 
 .title-advantage { 
     margin-bottom: 10px;
@@ -369,8 +378,13 @@ color: var(--title-text-color);
 .team-icon {
     fill: var(--svg-color);
 }
+
 .team-icon:hover {
 fill: #FFFFFF;
+}
+
+.team-icon:focus {
+    fill: #FFFFFF;
 }
 
 .about {
@@ -452,13 +466,11 @@ margin: -18px;
     border: 1px solid #EEEEEE;
 }
 
-.item-project:hover,
-.item-project:focus {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+.item-project:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-    
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 
